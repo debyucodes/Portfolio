@@ -1,0 +1,42 @@
+// PORTFOLIO
+.portfolioOverlay {
+  display: block;
+
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  h2 {
+    text-transform: capitalize;
+  }
+}
+
+.imageContainer {
+  width: calc(100% - 40px);
+  margin: 20px;
+  list-style: none;
+  position: relative;
+
+  img {
+    display: block;
+  }
+
+  .imageOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .8 ease;
+    background-color: #111;
+  
+    &:hover {
+    opacity: 0.9;
+    }
+  }
+}

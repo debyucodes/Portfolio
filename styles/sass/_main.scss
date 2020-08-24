@@ -1,0 +1,67 @@
+.loader {
+  display: none;
+}
+
+.wrapper {
+  max-width: 1800px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.mainContainer {
+  display: flex;
+  position: relative;
+  // display: grid;
+  // grid-template-columns: repeat(3, minmax(300px, 1fr));
+  // grid-template-rows: 500px 500px;
+}
+
+body {
+  background: #111;
+  font-size: 62.5%;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  height: calc(50% - 40px);
+  width: calc(100% - 20px);
+  margin: 20px 10px;
+  background: #222;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $header;
+}
+
+.container span {
+  color: #CDAA54;
+}
+
+.hero,
+.midColumn,
+.rightColumn {
+  width: 33.33%;
+}
+
+.hero {
+  background: url(../assets/freddie-marriage-w39PTDxKiK8-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.midTop {
+  background: #111;
+}

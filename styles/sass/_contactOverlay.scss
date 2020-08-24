@@ -1,0 +1,98 @@
+// CONTACT
+.contactOverlay {
+  display: none;
+}
+
+.contactContainer {
+  display: flex;
+  padding: 20px;
+
+  aside {
+    width: 40%;
+    background: #111;
+    border: 1px solid $silver;
+    margin: 0 30px 0 10px;
+    padding: 20px;
+
+    // NOT WORKING FOR SOME REASON???
+    // .github:hover {
+    //   color: #D64C31;
+    // }
+    
+    // .twitter:hover {
+    //   color: #1DCAFF;
+    // }
+    
+    // .linked:hover {
+    //   color: #0072B1;
+    //   transform: scale(1.5);
+    // }
+  }
+
+  form {
+    width: 60%;
+    padding: 20px;
+
+    h4 {
+      color: white;
+      font-family: $header;
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      background: none;
+      border: none;
+      border-bottom: 2px solid $silver;
+      padding: 5px 0;
+      margin-top: 15px;
+      color: white;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: none
+    }
+
+    .submit {
+      background: $gold;
+      padding: 5px 0;
+      width: 80%;
+      border: none;
+      font-family: $header;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      color: white;
+      margin-top: 50px;
+    }
+  }
+
+  h3 {
+    text-align: left;
+    font-family: $header;
+    color: $gold;
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-family: $base;
+    font-size: 1.2rem;
+    text-transform: lowercase;
+  }
+
+  a {
+    color: #222;
+    font-size: 1.8rem;
+    margin: 0 5px;
+  }
+
+  i {
+    color: $silver;
+    margin-right: 10px;
+  }
+}

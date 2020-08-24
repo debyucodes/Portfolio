@@ -4,9 +4,192 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Deb Yu</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@600&family=Oxygen&display=swap" rel="stylesheet"> 
 </head>
 <body>
+  <!-- HIDDEN OVERLAYS -->
+  <main class="overlayContainer">
+    <section class="aboutOverlay overlay">
+      <h1><span>about</span> me</h1>
+      <hr/>
+      <p>
+        hello? Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati eveniet dolorem ipsa, rem corporis eos nemo totam qui molestias hic iste distinctio, quos omnis modi quasi odio! Voluptatibus, praesentium?
+      </p>
+      <button class="closeButton"><i class="fas fa-times"></i></button>
+      <div class="skills">
+        <h2>my toolkit</h2>
+        <ul>
+          <div class="icon">
+            <li>
+            <img src="./svg/html5.svg" alt="html5">
+          </li>
+          <!-- <div class="iconText">html5</div> -->
+          </div>
+          
+          <li>
+            <img src="./svg/css-5.svg" alt="css">
+          </li>
+          <!-- <div class="iconText">css3</div> -->
+          <li>
+            <img src="./svg/sass-1.svg" alt="scss">
+          </li>
+          <!-- <div class="iconText">Sass</div> -->
+          <li>
+            <img src="./svg/javascript.svg" alt="javascript">
+          </li>
+          <!-- <div class="iconText">Javascript</div> -->
+          <li>
+            <img src="./svg/jquery.svg" alt="jquery">
+          </li>
+          <!-- <div class="iconText">jQuery</div> -->
+          <li>
+            <img src="./svg/react-2.svg" alt="react">
+          </li>
+          <!-- <div class="iconText">React.js</div> -->
+          <li>
+            <img src="./svg/firebase-1.svg" alt="firebase">
+          </li>
+          <!-- <div class="iconText">Firebase</div> -->
+          <li>  
+            <img src="./svg/github-1.svg" alt="github">
+          </li>
+          <!-- <div class="iconText">GitHub</div> -->
+          <li>
+            <img src="./svg/tablet.svg" alt="responsive design">
+          </li>
+          <!-- <div class="iconText">Resposnive Design</div> -->
+          <li>
+            <img src="./svg/accessibility.svg" alt="accessibility">
+          </li>
+          <!-- <div class="iconText">Accessibility</div> -->
+          <li>
+            <img src="./svg/command-line.svg" alt="command line">
+          </li>
+          <!-- <div class="iconText">Command line</div> -->
+          <li>
+            <img src="./svg/api.svg" alt="restful api">
+          </li>
+          <!-- <div class="iconText">Restful API</div> -->
+        </ul>
+      </div>
+    </section>
+    
+    <section class="contactOverlay overlay">
+      <h1><span>get</span> in touch</h1>
+      <hr/>
+      <div class="contactContainer">
+        <aside>
+          <h3>phone</h3>
+          <p><i class="fas fa-phone"></i> 647 444 1212</p>
+          <h3>email</h3>
+          <p><i class="fas fa-envelope"></i> debora.yu@gmail.com</p>
+          <h3>base in</h3>
+          <p><i class="fas fa-home"></i>Toronto, Canada</p>
+          <h3>socials</h3>
+          <a href="https://twitter.com/DebWebDev" class="twitter"><i class="fab fa-twitter"></i></a>
+            
+          <a href="" class="insta"><i class="fab fa-instagram-square"></i></a>
+            
+          <a href="https://www.linkedin.com/in/deborayu/" class="linked"><i class="fab fa-linkedin-in"></i></a>
+            
+          <a href="https://github.com/debyucodes" class="github"><i class="fab fa-github"></i></a>
+        </aside>
+        <form action="">
+          <h4>hit me up!</h4>
+          <p>
+          drop me a comment if you wanna chat about web development, design, dogs or anything (but... mostly dogs).
+          </p>
+          <label for="name" class="sr-only">your name</label>
+          <input type="text" placeholder="your name">
+          <label for="email" class="sr-only">your email</label>
+          <input type="email" placeholder="your email">
+          <label for="message"></label>
+          <textarea name="" id="" cols="30" rows="5" placeholder="your message"></textarea>
+          <button type="submit" class="submit">send message <i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+      <button class="closeButton"><i class="fas fa-times"></i></button>
+    </section>
+    
+    <section class="portfolioOverlay overlay">
+      <h1><span>my</span> work</h1>
+      <hr/>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, libero repudiandae. Quidem voluptatum eligendi, vero sint labore sit incidunt cum libero, pariatur architecto velit suscipit minima quia excepturi, modi in.</p>
+      <ul>
+        <li class="imageContainer">
+          <img src="./assets/Screen Shot 2020-08-24 at 5.44.14 PM.png" alt="">
+          <div class="imageOverlay">
+            <h2>Pawnder</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </li>
+        <li class="imageContainer">
+          <img src="./assets/Screen Shot 2020-08-24 at 5.42.24 PM.png" alt="">
+          <div class="imageOverlay">
+            <h2>Backronym</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </li>
+        <li class="imageContainer">
+          <img src="./assets/Screen Shot 2020-08-24 at 5.39.43 PM.png" alt="">
+          <div class="imageOverlay">
+            <h2>PlantList</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </li>
+        <li class="imageContainer">
+          <img src="./assets/Screen Shot 2020-08-24 at 5.52.53 PM.png" alt="">
+          <div class="imageOverlay">
+            <h2>Drag Name Generator</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </li>
+      </ul>
+      <button class="closeButton"><i class="fas fa-times"></i></button>
+    </section>
+  </main>
   
+  <!-- wrapper starts here -->
+  <main class="mainContainer wrapper">
+
+    <!-- HERO IMAGE HERE -->
+    <section class="hero"></section>
+    
+    <section class="midColumn">
+      <div class="container midTop">
+        <div class="text">
+          <h3>hello! i'm</h3>
+          <h1>Deb Yu</h1>
+          <span>front-end developer</span>
+        </div>
+      </div>
+      
+      <!-- PORTFOLIO SECTION -->
+      <div class="container portfolio">
+        <h2>my <span>portfolio</span></h2>
+      </div>
+    </section>
+    
+    <section class="rightColumn">
+      <!-- ABOUT SECTION -->      
+      <div class="container about">
+        <h2>about <span>me</span></h2>
+      </div>
+
+      <!-- CONTACT SECTION -->
+      <div class="container contact">
+        <h2>get <span>in touch</span></h2>
+      </div>
+    </section>
+
+  </main>
+  <!-- wrapper ends here -->
+
+  <!-- JS -->
+  <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>    
+  <script src="https://kit.fontawesome.com/3e2ecb9775.js" crossorigin="anonymous"></script>     
+  <script src="./script.js"></script>
 </body>
 </html>

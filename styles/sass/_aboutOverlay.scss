@@ -1,0 +1,36 @@
+// ABOUT
+.aboutOverlay {
+  display: none;
+  
+  span {
+    color: #CDAA54;
+  }
+  
+  .skills {
+    border: 5px solid #111;
+    border-radius: 20px;
+    margin: 30px;
+    text-align: center;
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 80px 80px 80px;
+      grid-gap: 50px;
+    }
+  }
+
+  li {
+    list-style: none;
+    height: 60px;
+    width: 60px;
+    color: white;
+    opacity: 0.5;
+    transition: .3s ease-out;
+  }
+
+  li:hover {
+    opacity: 1;
+    transform: scale(1.5)
+  }
+}
