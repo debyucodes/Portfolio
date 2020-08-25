@@ -366,7 +366,7 @@ img {
 }
 
 .overlay p {
-  font-family: "Oxygen", sans-serif;
+  font-family: "Roboto Mono", monospace;
 }
 
 .overlay .closeButton {
@@ -384,6 +384,7 @@ img {
 
 .aboutOverlay {
   display: none;
+  overflow-y: scroll;
 }
 
 .aboutOverlay span {
@@ -421,6 +422,12 @@ img {
   opacity: 1;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+.aboutOverlay p {
+  font-size: 1.2rem;
+  text-transform: none;
+  padding: 0 30px;
 }
 
 .contactOverlay {
@@ -493,7 +500,7 @@ img {
 }
 
 .contactContainer p {
-  font-family: "Oxygen", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-size: 1.2rem;
   text-transform: lowercase;
 }
@@ -510,7 +517,9 @@ img {
 }
 
 .portfolioOverlay {
-  display: block;
+  display: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.2rem;
 }
 
 .portfolioOverlay ul {
@@ -524,6 +533,7 @@ img {
 
 .portfolioOverlay h2 {
   text-transform: capitalize;
+  font-size: 1.8rem;
 }
 
 .imageContainer {
@@ -531,6 +541,7 @@ img {
   margin: 20px;
   list-style: none;
   position: relative;
+  text-align: center;
 }
 
 .imageContainer img {
@@ -553,4 +564,20 @@ img {
 
 .imageContainer .imageOverlay:hover {
   opacity: 0.9;
+}
+
+.imageContainer p {
+  text-transform: lowercase;
+}
+
+.imageContainer a {
+  color: white;
+  background: #696969;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+.imageContainer a:hover {
+  background: #CDAA54;
 }

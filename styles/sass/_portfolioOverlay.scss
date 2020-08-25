@@ -1,6 +1,8 @@
 // PORTFOLIO
 .portfolioOverlay {
-  display: block;
+  display: none;
+  font-family: $base;
+  font-size: 1.2rem;
 
   ul {
     display: grid;
@@ -10,6 +12,7 @@
 
   h2 {
     text-transform: capitalize;
+    font-size: 1.8rem;
   }
 }
 
@@ -18,6 +21,7 @@
   margin: 20px;
   list-style: none;
   position: relative;
+  text-align: center;
 
   img {
     display: block;
@@ -37,6 +41,22 @@
   
     &:hover {
     opacity: 0.9;
+    }
+  }
+
+  p {
+    text-transform: lowercase;
+  }
+
+  a {
+    color: white;
+    background: $silver;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+
+    &:hover {
+      background: $gold;
     }
   }
 }

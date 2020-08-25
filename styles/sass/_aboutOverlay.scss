@@ -1,6 +1,7 @@
 // ABOUT
 .aboutOverlay {
   display: none;
+  overflow-y: scroll;
   
   span {
     color: #CDAA54;
@@ -32,5 +33,11 @@
   li:hover {
     opacity: 1;
     transform: scale(1.5)
+  }
+
+  p {
+    font-size: 1.2rem;
+    text-transform: none;
+    padding: 0 30px;
   }
 }
