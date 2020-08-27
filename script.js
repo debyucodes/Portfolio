@@ -12,21 +12,23 @@ app.init = () => {
 // When user clicks on ABOUT ME
 app.clickAbout = () => {
   $('.about').click(function() {
-    $('.aboutOverlay').show();
+    // $('.aboutOverlay').show();
+    $('.aboutOverlay').fadeIn();
+
   })
 };
 
 // When user clicks on CONTACT
 app.clickContact = () => {
   $('.contact').click(function() {
-    $('.contactOverlay').show();
+    $('.contactOverlay').fadeIn();
   })
 };
 
 // When user clicks on PORTFOLIO
 app.clickPortfolio = () => {
   $('.portfolio').click(function() {
-    $('.portfolioOverlay').show();
+    $('.portfolioOverlay').fadeIn();
   })
 };
 
@@ -34,7 +36,7 @@ app.clickPortfolio = () => {
 app.close = () => {
   $('.closeButton').click(function(){
     console.log('deb');
-    $('.overlay').hide();
+    $('.overlay').fadeOut();
   })
 };
 

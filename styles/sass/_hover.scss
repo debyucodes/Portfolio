@@ -2,4 +2,13 @@
 .portfolio:hover,
 .contact:hover {
   border: 5px solid #CDAA54;
+  cursor: pointer;
+  box-shadow: 0 0 5px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
+}
+
+.about,
+.portfolio,
+.contact {
+  transition: 0.5s ease;
 }

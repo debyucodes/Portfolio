@@ -26,7 +26,7 @@
   img {
     display: block;
   }
-
+  
   .imageOverlay {
     position: absolute;
     top: 0;
@@ -36,8 +36,8 @@
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .8 ease;
     background-color: #111;
+    transition: opacity 0.5s ease;
   
     &:hover {
     opacity: 0.9;

@@ -69,6 +69,7 @@
       font-size: 1.3rem;
       color: white;
       margin-top: 50px;
+      cursor: pointer;
     }
   }
 
@@ -82,7 +83,7 @@
   p {
     font-family: $base;
     font-size: 1.2rem;
-    text-transform: lowercase;
+    text-transform: none;
   }
 
   a {

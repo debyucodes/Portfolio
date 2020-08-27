@@ -332,6 +332,17 @@ img {
 .portfolio:hover,
 .contact:hover {
   border: 5px solid #CDAA54;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #ffee10;
+          box-shadow: 0 0 5px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
+}
+
+.about,
+.portfolio,
+.contact {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .overlayContainer {
@@ -371,6 +382,7 @@ img {
 
 .overlay .closeButton {
   color: white;
+  cursor: pointer;
 }
 
 .closeButton {
@@ -490,6 +502,7 @@ img {
   font-size: 1.3rem;
   color: white;
   margin-top: 50px;
+  cursor: pointer;
 }
 
 .contactContainer h3 {
@@ -502,7 +515,7 @@ img {
 .contactContainer p {
   font-family: "Roboto Mono", monospace;
   font-size: 1.2rem;
-  text-transform: lowercase;
+  text-transform: none;
 }
 
 .contactContainer a {
@@ -557,9 +570,9 @@ img {
   height: 100%;
   width: 100%;
   opacity: 0;
-  -webkit-transition: .8 ease;
-  transition: .8 ease;
   background-color: #111;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 
 .imageContainer .imageOverlay:hover {
