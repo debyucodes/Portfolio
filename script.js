@@ -3,18 +3,25 @@ const app = {};
 
 // Initilize app
 app.init = () => {
+  app.loaded();
   app.clickAbout();
   app.clickContact();
   app.clickPortfolio();
   app.close();
 }
 
+// PRELOADER
+app.loaded = () => {
+  $('body').toggleClass('loaded');
+  setTimeout(() => {
+    $('body').addClass('loaded');
+  }, 3000);
+}
+
 // When user clicks on ABOUT ME
 app.clickAbout = () => {
   $('.about').click(function() {
-    // $('.aboutOverlay').show();
     $('.aboutOverlay').fadeIn();
-
   })
 };
 

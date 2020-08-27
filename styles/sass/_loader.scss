@@ -1,0 +1,60 @@
+// LOADER BE LIKE..
+#loaderWrapper {
+
+  .loaderSection {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #111;
+    z-index: 1000;
+  }
+
+  .loaderLeft {
+    left: 0;
+  }
+
+  .loaderRight {
+    right: 0;
+  }
+}
+
+#loader {
+  z-index: 1001;
+}
+
+// WHEN LOADED
+.loaded #loaderWrapper {
+  visibility: hidden;
+
+  .loaderLeft {
+    transform: translateX(-100%);
+    transition: all 0.5s 0.5s ease-out;
+  }
+
+  .loaderRight {
+    transform: translateX(100%);
+    transition: all 0.5s 0.5s ease-out;
+  }
+}
+
+.loaded #loader {
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotate(0deg) rotateY(0deg);
+  }
+
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg)rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
