@@ -57,18 +57,38 @@ img {
   align-items: center;
   object-fit: cover;
   margin: 10px;
-  transition: 0.8s ease-out;
+  transition: 1s ease-out;
   perspective: 1000px;
 
   &:hover {
     background: url(../assets/deb_headshot.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    transform: translateX(-15px);
+    transform: translateX(-20px) translateY(-20px);
   } 
+
+  &:hover + p {
+    display: none;
+  }
+
+  p {
+    color: $gold;
+    text-transform: none;
+    font-family: $base;
+    margin-top: 700px;
+    font-size: 0.8rem;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: 800;
+    }
+  }
 }
+
 .hero:hover + .hiddenText {
     display: block;
+    z-index: 2000;
   }
 
 .hiddenText {

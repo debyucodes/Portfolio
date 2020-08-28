@@ -397,8 +397,8 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   margin: 10px;
-  -webkit-transition: 0.8s ease-out;
-  transition: 0.8s ease-out;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
   -webkit-perspective: 1000px;
           perspective: 1000px;
 }
@@ -407,12 +407,31 @@ img {
   background: url(../assets/deb_headshot.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-transform: translateX(-15px);
-          transform: translateX(-15px);
+  -webkit-transform: translateX(-20px) translateY(-20px);
+          transform: translateX(-20px) translateY(-20px);
+}
+
+.hero:hover + p {
+  display: none;
+}
+
+.hero p {
+  color: #CDAA54;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+  margin-top: 700px;
+  font-size: 0.8rem;
+}
+
+.hero p a {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
 }
 
 .hero:hover + .hiddenText {
   display: block;
+  z-index: 2000;
 }
 
 .hiddenText {
@@ -491,7 +510,7 @@ img {
 }
 
 .overlay p {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto", sans-serif;
 }
 
 .overlay .closeButton {
@@ -627,7 +646,7 @@ img {
 }
 
 .contactContainer p {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   text-transform: none;
 }
@@ -645,7 +664,7 @@ img {
 
 .portfolioOverlay {
   display: none;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
 }
 
