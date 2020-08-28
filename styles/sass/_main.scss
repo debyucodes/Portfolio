@@ -11,9 +11,6 @@
 .mainContainer {
   display: flex;
   position: relative;
-  // display: grid;
-  // grid-template-columns: repeat(3, minmax(300px, 1fr));
-  // grid-template-rows: 500px 500px;
 }
 
 body {
@@ -60,6 +57,43 @@ img {
   align-items: center;
   object-fit: cover;
   margin: 10px;
+  transition: 0.8s ease-out;
+  perspective: 1000px;
+
+  &:hover {
+    background: url(../assets/deb_headshot.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateX(-15px);
+  } 
+}
+.hero:hover + .hiddenText {
+    display: block;
+  }
+
+.hiddenText {
+  display: none;
+  color: #222;
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  margin: 30px 0 0 300px;
+  text-align: center;
+  background-color: #fff;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 50px;
+
+  &:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 50px;
+    top: 100px;
+    border: 15px solid;
+    border-color: #fff transparent transparent #fff;
+  }
 }
 
 .midTop {
