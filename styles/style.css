@@ -712,6 +712,10 @@ img {
   opacity: 0.9;
 }
 
+.imageContainer h2 {
+  color: #CDAA54;
+}
+
 .imageContainer p {
   text-transform: lowercase;
 }
@@ -726,4 +730,13 @@ img {
 
 .imageContainer a:hover {
   background: #CDAA54;
+}
+
+@media (max-width: 1200px) {
+  .mainContainer {
+    min-height: 120vh;
+  }
+  .hero {
+    display: none;
+  }
 }
