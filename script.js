@@ -8,6 +8,7 @@ app.init = () => {
   app.clickContact();
   app.clickPortfolio();
   app.close();
+  app.clearForm();
 }
 
 // PRELOADER
@@ -46,6 +47,11 @@ app.close = () => {
     $('.overlay').fadeOut();
   })
 };
+
+// Clear search on form
+app.clearForm = () => {
+  $('.clear').val('');
+}
 
 // doc ready
 $(document).ready(function(){

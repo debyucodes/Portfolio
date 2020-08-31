@@ -1,9 +1,14 @@
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
   .mainContainer {
-    min-height: 120vh;
+    min-height: 100vh;
+    min-width: 800px;
   }
 
   .hero {
     display: none;
+  }
+
+  .overlay {
+    left: -34%;
   }
 }
