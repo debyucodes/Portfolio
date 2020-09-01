@@ -733,12 +733,53 @@ img {
 @media (max-width: 800px) {
   .mainContainer {
     min-height: 100vh;
-    min-width: 800px;
+    width: 1000px;
   }
   .hero {
     display: none;
   }
   .overlay {
     left: -34%;
+    min-width: 660px;
+  }
+  .portfolioOverlay ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactOverlay {
+    width: 100%;
+  }
+  .contactOverlay .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactOverlay aside {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contactOverlay form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 660px) {
+  .mainContainer {
+    position: static;
+  }
+  .portfolio,
+  .about,
+  .contact,
+  .rightColumn {
+    display: none;
+  }
+  .overlayContainer {
+    display: none;
   }
 }

@@ -1,7 +1,7 @@
 @media (max-width: 800px) {
   .mainContainer {
     min-height: 100vh;
-    min-width: 800px;
+    width: 1000px;
   }
 
   .hero {
@@ -10,5 +10,45 @@
 
   .overlay {
     left: -34%;
+    min-width: 660px;
+  }
+
+  .portfolioOverlay ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contactOverlay {
+    width: 100%;
+
+    .contactContainer {
+      flex-direction: column;
+    }
+
+    aside {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    form {
+      width: 80%
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .mainContainer {
+    position: static;
+  }
+
+  .portfolio,
+  .about,
+  .contact,
+  .rightColumn {
+  display: none;
+}
+
+  .overlayContainer {
+    display: none;
   }
 }
