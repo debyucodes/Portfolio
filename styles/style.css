@@ -335,6 +335,10 @@ h2,
   margin: 0 auto;
 }
 
+.burger {
+  display: none;
+}
+
 .mainContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -772,14 +776,10 @@ img {
 @media (max-width: 660px) {
   .mainContainer {
     position: static;
+    width: 900px;
   }
-  .portfolio,
-  .about,
-  .contact,
-  .rightColumn {
-    display: none;
-  }
-  .overlayContainer {
-    display: none;
+  .overlay {
+    left: -34%;
+    min-width: 550px;
   }
 }
