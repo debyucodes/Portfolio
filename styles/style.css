@@ -577,6 +577,25 @@ img {
   padding: 0 30px;
 }
 
+.aboutOverlay a {
+  background: #CDAA54;
+  padding: 5px 20px;
+  margin: 0 30px;
+  border: none;
+  font-family: "Heebo", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: white;
+  margin-top: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.aboutOverlay a i {
+  color: #696969;
+}
+
 .contactOverlay {
   display: none;
 }
@@ -627,7 +646,7 @@ img {
   resize: none;
 }
 
-.contactContainer form .submit {
+.contactContainer form .button {
   background: #CDAA54;
   padding: 5px 0;
   width: 80%;
