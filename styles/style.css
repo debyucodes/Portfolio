@@ -800,3 +800,17 @@ img {
     min-width: 550px;
   }
 }
+
+@media (max-width: 600px) {
+  .mainContainer {
+    width: 100%;
+  }
+  .hero,
+  .midColumn,
+  .rightColumn {
+    display: none;
+  }
+  .overlay {
+    display: block;
+  }
+}
