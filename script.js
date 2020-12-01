@@ -9,6 +9,7 @@ app.init = () => {
   app.clickPortfolio();
   app.close();
   app.clearForm();
+  app.dropDown();
 }
 
 // PRELOADER
@@ -51,6 +52,13 @@ app.close = () => {
 // Clear search on form
 app.clearForm = () => {
   $('.clear').val('');
+}
+
+// drop down menu in mobile
+app.dropDown = () => {
+  $('.burger').click(function() {
+    $('.dropDown').slideToggle(500);
+  })
 }
 
 // doc ready

@@ -329,6 +329,10 @@ h2,
   display: none;
 }
 
+.mobileOnly {
+  display: none;
+}
+
 .wrapper {
   max-width: 1800px;
   width: 95%;
@@ -801,16 +805,95 @@ img {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 550px) {
   .mainContainer {
-    width: 100%;
-  }
-  .hero,
-  .midColumn,
-  .rightColumn {
     display: none;
   }
-  .overlay {
+  .intro {
+    text-align: left;
+  }
+  body {
+    overflow-y: scroll;
+  }
+  .mobileOnly {
     display: block;
+  }
+  .mobileOnly .mobileIntro {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+  }
+  .mobileOnly .mobileIntro .dropDown {
+    display: none;
+  }
+  .mobileOnly .mobileIntro li {
+    font-size: 2rem;
+  }
+  .mobileOnly .mobileIntro a {
+    text-decoration: none;
+    color: white;
+  }
+  .mobileOnly h2 {
+    color: #CDAA54;
+  }
+  .mobileOnly i {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .mobileOnly ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .mobileOnly li {
+    margin: 15px;
+  }
+  .mobileOnly h3 {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    text-align: left;
+  }
+  .mobileOnly p {
+    color: white;
+    text-transform: none;
+  }
+  #mobileAbout {
+    background-color: #222;
+    padding: 10px;
+  }
+  #mobileAbout p {
+    font-size: 1.3rem;
+    padding: 15px;
+  }
+  #mobileAbout img {
+    width: 50%;
+    margin: 0 auto;
+  }
+  #mobileContact {
+    margin: 15px;
+  }
+  #mobileContact p {
+    text-align: center;
+    padding: 5px 0;
+    font-size: 1.2rem;
+  }
+  #mobileContact a {
+    text-decoration: none;
+    color: white;
+  }
+  .mobileFooter {
+    background-color: #222;
+    border-top: 5px solid #CDAA54;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .mobileFooter a {
+    color: #CDAA54;
+    padding: 20px;
   }
 }

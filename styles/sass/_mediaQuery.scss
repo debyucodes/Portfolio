@@ -49,18 +49,112 @@
 }
 
 // Mobile phones 
-@media (max-width: 600px) {
+@media (max-width: 550px) {
+
   .mainContainer {
-    width: 100%;
+    display: none;
   }
 
-  .hero,
-  .midColumn,
-  .rightColumn {
-    display: none; 
+  .intro{
+    text-align: left;
   }
 
-  .overlay {
+  body {
+    overflow-y: scroll;
+  }
+
+  .mobileOnly {
     display: block;
+
+    .mobileIntro {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 50px 0;
+
+      .dropDown {
+        display: none;
+      }
+
+      li {
+        font-size: 2rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    h2 {
+      color: $gold;
+    }
+
+    i {
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin: 15px;
+    }
+
+    h3 {
+      color: white;
+      font-size: 1.2rem;
+      margin-top: 30px;
+      text-align: left;
+    }
+
+    p {
+      color: white;
+      text-transform: none;
+    }
+  }
+
+  #mobileAbout {
+    background-color: #222;
+    padding: 10px;
+
+    p {
+      font-size: 1.3rem;
+      padding: 15px;
+    }
+    img { 
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  #mobileContact {
+    margin: 15px;
+
+    p {
+      text-align: center;
+      padding: 5px 0;
+      font-size: 1.2rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  .mobileFooter {
+    background-color: #222;
+    border-top: 5px solid $gold;
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+      color: $gold;
+      padding: 20px;
+    }
   }
 }
